@@ -1,0 +1,4 @@
+input.txt file
+1234567890
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
