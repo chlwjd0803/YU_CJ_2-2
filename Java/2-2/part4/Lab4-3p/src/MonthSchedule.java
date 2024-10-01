@@ -61,7 +61,7 @@ public class MonthSchedule {
         }
     }
 
-    private int getInt(){
+    private int getInt(){ //예외처리가 권장되는 방법은 아님, boolean 타입을 쓰는것이 더 적합
         while(true){
             try{
                 var num = scanner.nextInt();

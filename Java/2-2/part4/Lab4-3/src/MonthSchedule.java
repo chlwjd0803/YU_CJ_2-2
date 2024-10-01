@@ -1,23 +1,24 @@
 import java.util.Scanner;
 
 public class MonthSchedule {
-    private Day d[];
+    private Day d[]; //배열이 크기를 정하지않음, 배열의 원소도 초기화되지 않음
+    Scanner sc;
 
     public MonthSchedule(int day){
-        d = new Day[day+1];
-        for (int i = 0; i < day+1; i++) { // 각 Day 객체 초기화
-            d[i] = new Day(); //매우 중요한 작업
-        }
+            d = new Day[day+1]; //배열의 크기만 초기화, 배열의 원소는 여전히 초기화되지 않음
+            for (int i = 0; i < day+1; i++) { // 각 Day 원소를 초기화
+                d[i] = new Day(); //매우 중요한 작업, i가 이미 날짜이므로 Day자체의 생성자는 매개변수 없음
+            }
     }
 
-    public void input(int day, String work){
+    private void input(int day, String work){
         d[day].set(work);
     }
 
-    public void view(int day){d[day].show();}
+    private void view(int day){d[day].show();}
 
     public void run(){
-        Scanner sc = new Scanner(System.in);
+        sc = new Scanner(System.in);
 
         while(true){
             System.out.print("할일(1:입력, 2:보기, 3:종료) >>> ");
