@@ -38,7 +38,7 @@ int polyGenerator(poly* p, int* size) { //HW3.1
 	return --i; //다항식의 배열 길이를 반환
 }
 
-poly* padd(poly* A, poly* B, int endA, int endB, int* Dlen) { //의심
+poly* padd(poly* A, poly* B, int endA, int endB, int* Dlen) {
 	int startA = 0, startB = 0, startD = 0;
 	int sizeD = 10; //초기사이즈 10
 	poly* D = (poly*)malloc(sizeD * sizeof(poly));
@@ -51,7 +51,7 @@ poly* padd(poly* A, poly* B, int endA, int endB, int* Dlen) { //의심
 			D[startD++].exp = B[startB++].exp;
 			break;
 		}
-		case 0: {
+		case 0: { //a=b
 			if (A[startA].coef + B[startB].coef) { //0이 아니면
 				D[startD].coef = A[startA].coef + B[startB].coef;
 				D[startD++].exp = A[startA].exp;
@@ -59,7 +59,7 @@ poly* padd(poly* A, poly* B, int endA, int endB, int* Dlen) { //의심
 			startA++, startB++;
 			break;
 		}
-		case 1: {
+		case 1: { //a>b
 			D[startD].coef = A[startA].coef;
 			D[startD++].exp = A[startA++].exp; //후위 연산자 이용하여 위치 증가
 			break;
@@ -82,15 +82,15 @@ poly* padd(poly* A, poly* B, int endA, int endB, int* Dlen) { //의심
 		startD++;
 		startB++;
 	}
-	*Dlen = startD; //위치조정, 마지막에 한칸 더 가있음
+	*Dlen = startD; //startD가 가르키는 위치만큼 다항식의 길이가 정해지므로
 	return D;
 }
 
 poly* single_mul(poly Ai, poly* B, int Blen) { //HW3.3
 	poly* C = (poly*)malloc(Blen * sizeof(poly));
 	for (int i = 0; i < Blen; i++) {
-		C[i].coef = Ai.coef * B[i].coef;
-		C[i].exp = Ai.exp + B[i].exp;
+		C[i].coef = Ai.coef * B[i].coef; //계수는 곱하고
+		C[i].exp = Ai.exp + B[i].exp; //차수는 더한다
 	}
 	return C;
 }
@@ -103,11 +103,11 @@ poly* pmul(poly* A, poly* B, int Alen, int Blen, int* Dlen) {
 	for (int i = 0; i < Alen; i++) {
 		poly* Ci = single_mul(A[i], B, Blen); // A[i]와 B의 곱
 		printf("single_mul - C%d(x)\n", i + 1);
-		printPoly(Ci, Blen);
+		printPoly(Ci, Blen); //Ci는 Blen만큼의 다항식 길이를 갖는다.
 		int tempDlen = 0;
 		poly* tempD = padd(D, Ci, *Dlen - 1, Blen - 1, &tempDlen); // D와 Ci의 덧셈
 		free(D); // 이전의 D 메모리 해제
-		D = tempD;
+		D = tempD; // 옮겨주기
 		*Dlen = tempDlen; // 다항식 길이 업데이트
 		free(Ci); // Ci 메모리 해제
 	}
