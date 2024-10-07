@@ -99,29 +99,37 @@ void storesum(term d[], int* totald, int row, int column, int* sum)
 		}
 }
 
+
+// 해당함수에서 논리적 오류 발생, 이유:
+// 행이 바뀌는 과정에서 sum의 초기화가 한번 누락되고
+// 다음에 찾은 값의 열이 0일경우
+// 초기화되지않은 sum으로 인해 논리적 오류가 발생
 void mMult(term a[], term b[], term d[])
 {	// multiply two sparse matrics
 	int i, j, column, totald = 0;
 	int rows_a = a[0].row, cols_a = a[0].col, totala = a[0].value; 
 	int cols_b = b[0].col, totalb = b[0].value; 
-	int row_begin = 1, row = a[1].row, sum = 0; 
+	int row_begin = 1, row = a[1].row, sum = 0;
 	term newB[MAX_TERMS]; 
 	if (cols_a != b[0].row) {
 		fprintf(stderr, "Incompatible matricses for MMult\n");
 		exit(0);
 	}
-	fast_transpose(b, newB); //b전치
-
-	//테스트
-	printMatrix(newB, SPARSE, "newB"); //전치 출력은 문제없이 잘 됨
-	//테스트
+	fast_transpose(b, newB);
 
 	a[totala + 1].row = rows_a; 
 	newB[totalb + 1].row = cols_b; 
 	newB[totalb + 1].col = 0;
 
-	for (i = 1; i <= totala; )
-	{
+	// 논리오류 수정 첫번째 방법
+	// for문의 증감식에 계속해서 sum을 0으로 초기화시켜준다.
+	for (i = 1; i <= totala; sum=0) //<--
+	{	
+		// 논리오류 수정 두번째 방법
+		int sum = 0;
+		// 반복문 초반에 sum을 미리 초기화한다.
+		// 그러면 행이 바뀌었을때 sum이 초기화되지 않는 오류가 사라진다.
+
 		column = newB[1].row; 
 		for (j = 1; j <= totalb + 1; ) 
 		{
@@ -155,13 +163,7 @@ void mMult(term a[], term b[], term d[])
 		for (; a[i].row == row; i++);
 		row_begin = i;
 		row = a[i].row;
-
-		// 추가한 코드, 논리 오류수정완료
-		sum = 0; 
-		// 행이 바뀌는 과정에서 sum의 초기화가 한번 누락되고
-		// 다음에 찾은 값의 열이 0일경우
-		// 초기화되지않은 sum으로 인해 논리적 오류가 발생
-
+		//sum = 0; 반복문 끝나기 전 확인차 초기화
 	} /* end of for I <= totala */
 	d[0].row = rows_a;
 	d[0].col = cols_b;
