@@ -1,4 +1,4 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+﻿#define _CRT_SECURE_NO_WARNINGS //비주얼 스튜디오 2022 정책으로 scanf사용이 제한되어 선언
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -13,24 +13,31 @@ typedef struct {
 } term;
 typedef enum shape { SPARSE, MATRIX } printShape;
 
+
+//void printMatrix(term t[], printShape shape, char* title) 로 했을때 char* title 부분에서 컴파일 오류발생 -> 자료형 불일치
 void printMatrix(term t[], printShape shape, const char* title)
+//컴파일 오류코드 수정완료
 {
 	int n = t[0].value;
 	int i, len;
-	const char* line = "---------------"; //형식에 맞게 수정
+
+	//char* line = "---------------", tLine[32]; 가 컴파일 오류발생, 자료형 불일치
+	const char* line = "---------------";
 	char tLine[32];
+	//컴파일 오류코드 수정완료
+	
 
 	len = strlen(line);
 	sprintf(tLine, "%s: %s", title, line);
 
-	if (shape == SPARSE)	// 희소행렬 형태로 출력
+	if (shape == SPARSE)
 	{
 		printf("%.*s\n", len, tLine);
 		for (i = 0; i <= n; i++)
 			printf("%2d | %d, %d, %d\n", i, t[i].row, t[i].col, t[i].value);
 		printf("%s\n", line);
 	}
-	else if (shape == MATRIX)  // 일반 행렬 형태로 출력
+	else if (shape == MATRIX)
 	{
 		int j, p = 1;
 		printf("%s:\n", title);
@@ -95,11 +102,11 @@ void storesum(term d[], int* totald, int row, int column, int* sum)
 void mMult(term a[], term b[], term d[])
 {	// multiply two sparse matrics
 	int i, j, column, totald = 0;
-	int rows_a = a[0].row, cols_a = a[0].col, totala = a[0].value; // 0번째 칸에있는 행, 열, 0이아닌 숫자의 개수
-	int cols_b = b[0].col, totalb = b[0].value; // 0번째 칸에있는 행, 열, 0이아닌 숫자의 개수
-	int row_begin = 1, row = a[1].row, sum = 0; // 행의 시작 index는 1, a 행의 시작점은 1부터, 합 초기화
-	term newB[MAX_TERMS]; //전치를 저장할 newB 생성
-	if (cols_a != b[0].row) { //a의 열과 b의 행이 같지 않으면 곱셈을 연산할 수 없다.
+	int rows_a = a[0].row, cols_a = a[0].col, totala = a[0].value; 
+	int cols_b = b[0].col, totalb = b[0].value; 
+	int row_begin = 1, row = a[1].row, sum = 0; 
+	term newB[MAX_TERMS]; 
+	if (cols_a != b[0].row) {
 		fprintf(stderr, "Incompatible matricses for MMult\n");
 		exit(0);
 	}
@@ -109,18 +116,17 @@ void mMult(term a[], term b[], term d[])
 	printMatrix(newB, SPARSE, "newB"); //전치 출력은 문제없이 잘 됨
 	//테스트
 
-	/* set boundary condition 입력되어있는것 기반으로*/
-	a[totala + 1].row = rows_a; //a[8+1] = a[9], a[0]은 행렬데이터개수 저장, a[1~8]은 원소들저장, a[9].row는 a[0].row와 같네
+	a[totala + 1].row = rows_a; 
 	newB[totalb + 1].row = cols_b; 
 	newB[totalb + 1].col = 0;
 
 	for (i = 1; i <= totala; )
 	{
-		column = newB[1].row; //열은 newB의 첫번째 행
-		for (j = 1; j <= totalb + 1; ) //b의 원소와 같아질때까지
+		column = newB[1].row; 
+		for (j = 1; j <= totalb + 1; ) 
 		{
 			// multiply a's row by b's column
-			if (a[i].row != row) //현재 검사중인 row와 이전 row가 같지 않다면
+			if (a[i].row != row)
 			{
 				storesum(d, &totald, row, column, &sum);
 				i = row_begin;
@@ -148,7 +154,14 @@ void mMult(term a[], term b[], term d[])
 		} // end of J <= totalb+1
 		for (; a[i].row == row; i++);
 		row_begin = i;
-		row = a[i].row; //현재 row데이터를 row에 넘겨줌
+		row = a[i].row;
+
+		// 추가한 코드, 논리 오류수정완료
+		sum = 0; 
+		// 행이 바뀌는 과정에서 sum의 초기화가 한번 누락되고
+		// 다음에 찾은 값의 열이 0일경우
+		// 초기화되지않은 sum으로 인해 논리적 오류가 발생
+
 	} /* end of for I <= totala */
 	d[0].row = rows_a;
 	d[0].col = cols_b;
@@ -207,8 +220,8 @@ void main()
 {
 	term d[MAX_TERMS];
 	term a[MAX_TERMS] =
-	{ {6,6,8}, //a[0]에는 행, 열, 0이아닌 원소의 개수 주어짐
-	 {0,0,15}, //a[i].row = 첫번째, a[i].col = 두번째, a[i].value = 세번째
+	{ {6,6,8},
+	 {0,0,15},
 	 {0,3,22},
 	 {0,5,-15},
 	 {1,1,11},
@@ -225,9 +238,9 @@ void main()
 	 {4,0,2} };
 
 	printf("\n***** Sparse Matrix Multiplication *****\n");
-	printMatrix(a, SPARSE, "A");// SPARSE: 희소 행렬 형태로 출력
+	printMatrix(a, SPARSE, "A"); // SPARSE: 희소 행렬 형태로 출력
 	printMatrix(b, SPARSE, "B");
 	mMult(a, b, d);
 	printMatrix(d, SPARSE, "D=AxB");
-	printMatrix(d, MATRIX, "D=AxB");	 // MATRIX: 일반 행렬 형태로 출력
+	printMatrix(d, MATRIX, "D=AxB"); // MATRIX: 일반 행렬 형태로 출력
 }
