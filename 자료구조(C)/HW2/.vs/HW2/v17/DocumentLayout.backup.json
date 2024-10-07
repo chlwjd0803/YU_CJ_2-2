@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\chlwj\\Desktop\\repa\\C_C\u002B\u002B\\YU_strc_theo\\HW2\\",
+  "WorkspaceRootPath": "C:\\\uC601\uB300\uCF54\uB4DC\uD30C\uC77C\\YU_CJ_repo\\\uC790\uB8CC\uAD6C\uC870(C)\\HW2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9C37023-6F2F-49AF-98D0-0EB5190B86EE}|HW2\\HW2.vcxproj|C:\\Users\\chlwj\\Desktop\\repa\\C_C\u002B\u002B\\YU_strc_theo\\HW2\\HW2\\HW2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{C9C37023-6F2F-49AF-98D0-0EB5190B86EE}|HW2\\HW2.vcxproj|C:\\\uC601\uB300\uCF54\uB4DC\uD30C\uC77C\\YU_CJ_repo\\\uC790\uB8CC\uAD6C\uC870(C)\\HW2\\HW2\\HW2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C9C37023-6F2F-49AF-98D0-0EB5190B86EE}|HW2\\HW2.vcxproj|solutionrelative:HW2\\HW2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,14 +20,18 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "HW2.cpp",
-              "DocumentMoniker": "C:\\Users\\chlwj\\Desktop\\repa\\C_C\u002B\u002B\\YU_strc_theo\\HW2\\HW2\\HW2.cpp",
+              "DocumentMoniker": "C:\\\uC601\uB300\uCF54\uB4DC\uD30C\uC77C\\YU_CJ_repo\\\uC790\uB8CC\uAD6C\uC870(C)\\HW2\\HW2\\HW2.cpp",
               "RelativeDocumentMoniker": "HW2\\HW2.cpp",
-              "ToolTip": "C:\\Users\\chlwj\\Desktop\\repa\\C_C\u002B\u002B\\YU_strc_theo\\HW2\\HW2\\HW2.cpp*",
+              "ToolTip": "C:\\\uC601\uB300\uCF54\uB4DC\uD30C\uC77C\\YU_CJ_repo\\\uC790\uB8CC\uAD6C\uC870(C)\\HW2\\HW2\\HW2.cpp*",
               "RelativeToolTip": "HW2\\HW2.cpp*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAiwIIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-04T14:17:19.111Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

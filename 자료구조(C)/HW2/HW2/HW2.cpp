@@ -95,33 +95,36 @@ void storesum(term d[], int* totald, int row, int column, int* sum)
 void mMult(term a[], term b[], term d[])
 {	// multiply two sparse matrics
 	int i, j, column, totald = 0;
-	int rows_a = a[0].row, cols_a = a[0].col, totala = a[0].value;
-	int cols_b = b[0].col, totalb = b[0].value;
-	int row_begin = 1, row = a[1].row, sum = 0;
-	term newB[MAX_TERMS];
-	if (cols_a != b[0].row) {
+	int rows_a = a[0].row, cols_a = a[0].col, totala = a[0].value; // 0번째 칸에있는 행, 열, 0이아닌 숫자의 개수
+	int cols_b = b[0].col, totalb = b[0].value; // 0번째 칸에있는 행, 열, 0이아닌 숫자의 개수
+	int row_begin = 1, row = a[1].row, sum = 0; // 행의 시작 index는 1, a 행의 시작점은 1부터, 합 초기화
+	term newB[MAX_TERMS]; //전치를 저장할 newB 생성
+	if (cols_a != b[0].row) { //a의 열과 b의 행이 같지 않으면 곱셈을 연산할 수 없다.
 		fprintf(stderr, "Incompatible matricses for MMult\n");
 		exit(0);
 	}
-	fast_transpose(b, newB);
+	fast_transpose(b, newB); //b전치
 
-	/* set boundary condition */
-	a[totala + 1].row = rows_a;
-	newB[totalb + 1].row = cols_b;
+	//테스트
+	printMatrix(newB, SPARSE, "newB"); //전치 출력은 문제없이 잘 됨
+	//테스트
+
+	/* set boundary condition 입력되어있는것 기반으로*/
+	a[totala + 1].row = rows_a; //a[8+1] = a[9], a[0]은 행렬데이터개수 저장, a[1~8]은 원소들저장, a[9].row는 a[0].row와 같네
+	newB[totalb + 1].row = cols_b; 
 	newB[totalb + 1].col = 0;
 
 	for (i = 1; i <= totala; )
 	{
-		column = newB[1].row;
-		for (j = 1; j <= totalb + 1; )
+		column = newB[1].row; //열은 newB의 첫번째 행
+		for (j = 1; j <= totalb + 1; ) //b의 원소와 같아질때까지
 		{
 			// multiply a's row by b's column
-			if (a[i].row != row)
+			if (a[i].row != row) //현재 검사중인 row와 이전 row가 같지 않다면
 			{
 				storesum(d, &totald, row, column, &sum);
 				i = row_begin;
-				for (; newB[j].row == column; j++)
-					;
+				for (; newB[j].row == column; j++);
 				column = newB[j].row;
 			}
 			else if (newB[j].row != column)
@@ -143,10 +146,9 @@ void mMult(term a[], term b[], term d[])
 				j++;
 			}
 		} // end of J <= totalb+1
-		for (; a[i].row == row; i++)
-			;
+		for (; a[i].row == row; i++);
 		row_begin = i;
-		row = a[i].row;
+		row = a[i].row; //현재 row데이터를 row에 넘겨줌
 	} /* end of for I <= totala */
 	d[0].row = rows_a;
 	d[0].col = cols_b;
@@ -205,8 +207,8 @@ void main()
 {
 	term d[MAX_TERMS];
 	term a[MAX_TERMS] =
-	{ {6,6,8},
-	 {0,0,15},
+	{ {6,6,8}, //a[0]에는 행, 열, 0이아닌 원소의 개수 주어짐
+	 {0,0,15}, //a[i].row = 첫번째, a[i].col = 두번째, a[i].value = 세번째
 	 {0,3,22},
 	 {0,5,-15},
 	 {1,1,11},
@@ -223,17 +225,9 @@ void main()
 	 {4,0,2} };
 
 	printf("\n***** Sparse Matrix Multiplication *****\n");
-	/* Debug */printMatrix(a, SPARSE, "A");// SPARSE: 희소 행렬 형태로 출력
-	/* Debug */printMatrix(b, SPARSE, "B");
+	printMatrix(a, SPARSE, "A");// SPARSE: 희소 행렬 형태로 출력
+	printMatrix(b, SPARSE, "B");
 	mMult(a, b, d);
-	/* Debug */printMatrix(d, SPARSE, "D=AxB");
-	/* Debug */printMatrix(d, MATRIX, "D=AxB");	 // MATRIX: 일반 행렬 형태로 출력
-
-	// printf("\n***** Sparse Matrix Addition *****\n");
-	// fast_transpose(a, b);	// b행렬을 a를 전치하여 생성
-	// /* Debug */printMatrix(a, SPARSE, "A");
-	// /* Debug */printMatrix(b, SPARSE, "B=A.T");  
-	// mAdd(a, b, d);
-	// /* Debug */printMatrix(d, SPARSE, "D=A+B");
-	// /* Debug */printMatrix(d, MATRIX, "D=A+B"); 
+	printMatrix(d, SPARSE, "D=AxB");
+	printMatrix(d, MATRIX, "D=AxB");	 // MATRIX: 일반 행렬 형태로 출력
 }
