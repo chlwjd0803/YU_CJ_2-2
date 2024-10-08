@@ -1,4 +1,4 @@
 ﻿  HW2.cpp
-C:\YU_CJ_repo\자료구조(C)\HW2\HW2\HW2.cpp(30,14): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\YU_CJ_repo\자료구조(C)\HW2\HW2\HW2.cpp(221,6): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
-  HW2.vcxproj -> C:\YU_CJ_repo\자료구조(C)\HW2\x64\Debug\HW2.exe
+C:\영대코드파일\YU_CJ_repo\자료구조(C)\HW2\HW2\HW2.cpp(30,14): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\영대코드파일\YU_CJ_repo\자료구조(C)\HW2\HW2\HW2.cpp(221,6): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  HW2.vcxproj -> C:\영대코드파일\YU_CJ_repo\자료구조(C)\HW2\x64\Debug\HW2.exe

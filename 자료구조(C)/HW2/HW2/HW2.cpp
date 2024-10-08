@@ -119,17 +119,16 @@ void mMult(term a[], term b[], term d[])
 
 	a[totala + 1].row = rows_a; 
 	newB[totalb + 1].row = cols_b; 
-	newB[totalb + 1].col = 0;
+	// 논리오류 수정 두번째 방법
+	// newB의 열이 끝나는 부분을 -1로 설정해주면
+	// 조건에 의해 COMPARE문에서 A의 열이 0인경우 이미 끝난 B의 열과 비교할 필요가 없으므로
+	// -1로 설정할경우 열이 끝났다고 알려줌과 동시에 반복문을 정확히 마치게 된다.
+	newB[totalb + 1].col = -1; //수정된 부분
 
 	// 논리오류 수정 첫번째 방법
 	// for문의 증감식에 계속해서 sum을 0으로 초기화시켜준다.
-	for (i = 1; i <= totala; sum=0) //<--
+	for (i = 1; i <= totala; sum=0) //<--수정된부분
 	{	
-		// 논리오류 수정 두번째 방법
-		int sum = 0;
-		// 반복문 초반에 sum을 미리 초기화한다.
-		// 그러면 행이 바뀌었을때 sum이 초기화되지 않는 오류가 사라진다.
-
 		column = newB[1].row; 
 		for (j = 1; j <= totalb + 1; ) 
 		{
