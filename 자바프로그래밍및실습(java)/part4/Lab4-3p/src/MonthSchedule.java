@@ -22,7 +22,7 @@ public class MonthSchedule {
             return;
         }
 
-        days[day] = new Day(); //객체 초기화!
+        days[day] = new Day(); //객체 초기화!,입력할때 시켜주는 상황
         days[day].set(work);
     }
 
@@ -40,7 +40,7 @@ public class MonthSchedule {
     }
 
     private void finish(){
-        scanner.close();
+        scanner.close(); //스캐너 닫기
         System.out.println("종료합니다.");
     }
 
@@ -49,7 +49,7 @@ public class MonthSchedule {
         while(true){
             System.out.print("할일(1:입력, 2:보기, 3:종료) : ");
             var menu = getInt();
-            switch(menu){
+            switch(menu){ //스위치문을 활용할것
                 case 1-> input();
                 case 2-> view();
                 case 3-> {

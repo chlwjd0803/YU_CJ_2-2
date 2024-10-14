@@ -1,5 +1,7 @@
 import java.util.Scanner;
-import java.util.InputMismatchException;
+import java.util.InputMismatchException; //입력 자료형이 잘못될경우
+
+//예외처리는 시험 문제에 출제될 확률이 매우 높음
 
 public class InputException {
     public static void main(String[] args) {

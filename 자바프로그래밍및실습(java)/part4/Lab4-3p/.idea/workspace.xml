@@ -5,14 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a34c7e2-6d75-464e-b6b5-8a4b55119c43" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/../../HW1/src/StudentData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab4-4/src/DicApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex4-1/Ex4-1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ex4-1/src/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Ex5-5/src/MethodOverridingEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Ex5-9/src/InterfaceEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-1/Lab5-1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-1/src/Converter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-1/src/Won2Dollar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-2/Lab5-2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-2/src/Converter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-2/src/Km2Mile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-3/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-3/Lab5-3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-3/src/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-3/src/StackApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-3/src/StringStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-3p/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-3p/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-3p/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-3p/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-3p/Lab5-3p.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-3p/src/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-3p/src/StackApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../part5/Lab5-3p/src/StringStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part2/Ex2-9/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../part2/Ex2-9/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part2/Ex2-9/src/BitOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../part2/Ex2-9/src/BitOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part3/Ex3-10/src/ScoreAverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../part3/Ex3-10/src/ScoreAverage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part3/Ex3-17/src/InputException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../part3/Ex3-17/src/InputException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part3/Ex3-9/src/foreachEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../part3/Ex3-9/src/foreachEx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part3/Lab3-1/src/Printstar.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../part3/Lab3-1/src/Printstar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part3/Lab3-2/src/Moneycal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../part3/Lab3-2/src/Moneycal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part3/Lab3-3/src/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../part3/Lab3-3/src/Add.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part3/Lab3-4/src/Multiply.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../part3/Lab3-4/src/Multiply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4-1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4-1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4-1/src/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4-1/src/Grade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4-1p/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4-1p/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4-1p/src/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4-1p/src/Grade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab4-2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4-2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4-2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4-2/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab4-2/src/CircleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4-2/src/CircleManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab4-3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4-3/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4-3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4-3/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab4-3/src/MonthSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4-3/src/MonthSchedule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MonthSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonthSchedule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,10 +65,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
-  </component>
-  <component name="PerforceDirect.Settings">
-    <option name="CHARSET" value="없음" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -41,22 +75,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/chlwj/Desktop/repa/Java/2-2/part4/Lab4-3p&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/영대코드파일/YU_CJ_repo/Java/2-2/part4/Lab4-3p/src/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;애플리케이션.Main.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/영대코드파일/YU_CJ_repo/자바프로그래밍및실습(java)/part5/Lab5-1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/영대코드파일/YU_CJ_repo/Java/2-2/part4/Lab4-3p/src/Main.java",
+    "vue.rearranger.settings.migration": "true",
+    "애플리케이션.Main.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -77,6 +111,7 @@
       <workItem from="1727696381990" duration="1115000" />
       <workItem from="1727698870382" duration="19000" />
       <workItem from="1727742360647" duration="1586000" />
+      <workItem from="1728910123719" duration="174000" />
     </task>
     <servers />
   </component>

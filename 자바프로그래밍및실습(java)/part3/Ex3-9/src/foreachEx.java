@@ -1,6 +1,7 @@
 public class foreachEx {
     enum Week { 월, 화, 수, 목, 금, 토, 일 }
     //상수집합을 정의하는 특별한 자료형 enum
+    // 생소한 개념이니 시험 전에 숙지할것
 
     public static void main(String[] args) {
         int [] n = { 1,2,3,4,5 }; //자동적으로 5칸의 배열 할당
@@ -20,6 +21,7 @@ public class foreachEx {
         System.out.println();
 
         // 아래 for-each에서 day는 월, 화, 수, 목, 금, 토, 일 값으로 반복
+        // 시험 문제로 아래와 같이 생소한 개념을 출제할 수 있음
         for (Week day : Week.values())
             System.out.print(day + "요일 ");
         System.out.println();

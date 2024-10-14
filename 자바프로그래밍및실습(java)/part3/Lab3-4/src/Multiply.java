@@ -15,7 +15,7 @@ public class Multiply {
             }
             catch(InputMismatchException e){
                 System.out.println("정수타입이 아닌 것이 입력되었습니다. 다시 입력해주세요.");
-                sc.nextLine(); //C++의 버퍼비우기와 유사한 개념, 이미 입력된키를 제거함
+                sc.nextLine(); //C++의 버퍼비우기와 유사한 개념, 이미 입력된키를 제거함, 숙지하기
             }
         }
         sc.close(); //스캐너 종료

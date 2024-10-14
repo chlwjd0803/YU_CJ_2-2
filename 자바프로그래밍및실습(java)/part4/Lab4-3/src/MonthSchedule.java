@@ -11,9 +11,7 @@ public class MonthSchedule {
             }
     }
 
-    private void input(int day, String work){
-        d[day].set(work);
-    }
+    private void input(int day, String work){d[day].set(work);}
 
     private void view(int day){d[day].show();}
 

@@ -3,6 +3,7 @@ class Grade {
     private int sci;
     private int eng;
 
+    //아래 경우는 private 를 제외하고 모두 가능
     public Grade(int mth, int sci, int eng) {
         this.mth = mth;
         this.sci = sci;

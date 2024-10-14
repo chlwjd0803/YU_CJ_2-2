@@ -11,10 +11,7 @@ public class Grade {
         this.eng = eng;
     }
 
-    public double average(){
-        double avg = (mth + sci + eng) / 3;
-        return avg;
-    }
+    public double average(){return (double)(mth + sci + eng) / 3;}
 
 
     public static void main(String[] args){

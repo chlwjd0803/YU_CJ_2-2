@@ -26,7 +26,7 @@ public class Moneycal {
             int res = money / u;
             if(res>0){
                 System.out.println(u + "원 짜리 : " + res + "개");
-                money = money % u;
+                money = money % u; //위의 방법보다 이게 더 수학적임
             }
         }
 

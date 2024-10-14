@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//별 개수를 1개씩 줄여나가며 출력해주는 프로그램
 public class Printstar{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);

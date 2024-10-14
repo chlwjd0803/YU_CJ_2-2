@@ -1,3 +1,5 @@
+//쉬운 개념이니 유심히 볼 필요는 없고 length를 사용하면 편하다는 것만 숙지
+
 public class ScoreAverage {
     public static void main(String[] args) {
         double score[][] = {{3.3, 3.4},		// 1학년 1, 2학기 평점
