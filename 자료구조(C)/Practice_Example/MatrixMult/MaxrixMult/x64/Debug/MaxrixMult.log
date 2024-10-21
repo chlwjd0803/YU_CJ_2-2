@@ -1,0 +1,5 @@
+﻿  MaxrixMult.cpp
+C:\영대코드파일\YU_CJ_repo\자료구조(C)\MaxrixMult\MaxrixMult\term.h(28,14): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'MaxrixMult.cpp'을(를) 컴파일하는 중)
+  
+  MaxrixMult.vcxproj -> C:\영대코드파일\YU_CJ_repo\자료구조(C)\MaxrixMult\x64\Debug\MaxrixMult.exe
