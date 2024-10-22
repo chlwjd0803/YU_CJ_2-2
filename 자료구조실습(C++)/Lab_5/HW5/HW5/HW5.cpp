@@ -117,8 +117,13 @@ public:
 				char icp = expr[i]; //스택에 들어오려는 원소
 				char isp = stack[top]; //스택에 가장 위에있는 원소
 
-				if (getStrong(icp) <= getStrong(isp)) new_expr[j++] = pop(); //isp가 팝됨, 반대로 icp가 크다면 그냥 푸시만 하는것.
+				while (getStrong(icp) <= getStrong(isp)) { //팝 하고 남은 탑의 원소가 재비교함
+					new_expr[j++] = pop();
+					isp = stack[top]; //top이 하나 감소했으므로 재 초기화
+				}
+				
 				push(icp); //이후에 icp를 푸시함,
+
 			}
 			postfixStatus(expr[i], j);
 		}
