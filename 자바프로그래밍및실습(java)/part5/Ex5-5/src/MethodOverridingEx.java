@@ -29,7 +29,7 @@ class Circle extends Shape {
 }
 
 public class MethodOverridingEx {
-    static void paint(Shape p) {
+    static void paint(Shape p) { //인수로 업캐스팅되었음
         p.draw(); // p가 가리키는 객체 내에 오버라이딩된 draw() 호출.
         // 동적 바인딩
     }

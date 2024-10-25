@@ -23,7 +23,7 @@ public class StringStack implements Stack {
 
     @Override
     public boolean push(String val) {
-        if(top == cap-1) return false;
+        if(top == cap-1) return false; //용량이 10이면 인덱스는 9까지이므로 비교가 이렇다.
         else{
             stack[++top] = val;
             return true;

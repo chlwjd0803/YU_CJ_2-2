@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Refrigerator {
     public static void main(String[] args){
-        final byte POW = 0b1;
+        final byte POW = 0b1; //이진수 형태로 표현한것
         final byte DOOR = 0b10;
         final byte LAMP = 0b100;
         final byte TEMP = 0b1000;

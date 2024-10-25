@@ -5,7 +5,7 @@ public class Tripfee {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("여행지 : ");
-        String state = sc.nextLine(); //국가 도시 이름
+        String state = sc.nextLine(); //국가 도시 이름, 빈칸을 포함하여 받는거
         System.out.print("인원수 : ");
         int person = sc.nextInt(); //인원수
         System.out.print("숙박일 : ");

@@ -9,12 +9,13 @@ public class DicApp {
         System.out.println("한영 검색프로그램 입니다.");
 
         while(true){
-            System.out.println("한글단어? ");
+            System.out.print("한글단어? ");
             String word = sc.next();
             if(word.equals("그만")) break;
             System.out.println(dic.kor2eng(word));
         }
         System.out.println("종료합니다.");
+        sc.close();
     }
 
     public static void main(String[] args) {

@@ -12,6 +12,7 @@ public class InputException {
             System.out.print(i+">>");
             try {
                 n = scanner.nextInt(); // 정수 입력, 정수가 아니면 자동적으로 catch로 이동
+                //n으로 값이 이동하기전에 예외가 걸려서 입력스트림에 잔해가 남아있는 상태로 이동
             }
             catch(InputMismatchException e) {
                 String ex = scanner.nextLine(); // 현재 입력 스트림에 남아 있는 토큰은 읽어서 지워 버린다.

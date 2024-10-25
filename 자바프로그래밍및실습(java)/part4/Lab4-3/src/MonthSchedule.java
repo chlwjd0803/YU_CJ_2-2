@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class MonthSchedule {
@@ -17,10 +18,16 @@ public class MonthSchedule {
 
     public void run(){
         sc = new Scanner(System.in);
+        int slt;
 
         while(true){
             System.out.print("할일(1:입력, 2:보기, 3:종료) >>> ");
-            var slt = sc.nextInt();
+            try{slt = sc.nextInt();}
+            catch (InputMismatchException e){
+                sc.nextLine();
+                System.out.println("정수를 입력하여 주세요.");
+                continue;
+            }
             if(slt<1 || slt>3){
                 System.out.println("잘못된 입력입니다.");
                 continue;

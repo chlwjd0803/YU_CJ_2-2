@@ -10,7 +10,7 @@ public class Add {
             catch (Exception e) {} //예외가 발생할때 아무 짓도 하지 않겠다.(연산을 하지 않겠다)
             //예외 타입을 단순히 적은것
         }
-        System.out.println(sum);
+        System.out.println("내 코드 합 : " + sum);
 
         //교수님 코드 for-each 이용
         //아래 경우를 시험문제를 출제할 확률이 높음

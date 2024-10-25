@@ -12,7 +12,7 @@ public class CircleManager {
             c[i] = new Circle(x, y, radius); //각 배열의 원소 초기화, 중요개념
         }
         //for(int i = 0; i < c.length; i++) c[i].show();
-        for (Circle circle : c) circle.show(); //for-each 이용, 값을 읽어올때 용이
+        for (Circle circle : c) circle.show(); //for-each 이용, 값을 읽어올때 용이 int u : unit 꼴
         //for (자료형 변수 : 사용배열) 즉 circle만 써서 그 배열의 해당주소를 순차적으로 참조하는것
         sc.close();
     }
