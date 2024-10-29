@@ -17,6 +17,7 @@ int main() {
 	cout << "3. 맨앞에 노드 제거" << endl;
 	cout << "4. 지정한 노드 제거" << endl;
 	cout << "5. 노드 위치 검색" << endl;
+	cout << "6. 노드 리스트 역순" << endl;
 	cout << "-1. 프로그램 종료" << endl;
 
 	while (true) {
@@ -28,6 +29,7 @@ int main() {
 		cout << "3. 맨앞에 노드 제거" << endl;
 		cout << "4. 지정한 노드 제거" << endl;
 		cout << "5. 노드 위치 검색" << endl;
+		cout << "6. 노드 리스트 역순" << endl;
 		cout << "-1. 프로그램 종료" << endl;
 		*/
 		cout << "메뉴 입력 : ";
@@ -63,6 +65,9 @@ int main() {
 			cout << "검색할 노드 데이터를 입력하세요 : ";
 			cin >> item;
 			lb.search(item);
+			break;
+		case 6:
+			lb.invert();
 			break;
 		default:
 			cout << "입력값이 유효하지 않습니다" << endl;

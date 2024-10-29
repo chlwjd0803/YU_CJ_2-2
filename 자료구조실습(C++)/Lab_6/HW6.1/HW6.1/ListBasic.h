@@ -75,6 +75,21 @@ public:
 		}
 	}
 
+	void invert() {
+		List* lead = first;
+		List* middle = nullptr;
+		List* trail;
+
+		while (lead != nullptr) {
+			trail = middle;
+			middle = lead;
+			lead = lead->link;
+			middle->link = trail;
+		}
+
+		first = middle;
+	}
+
 	void printList() {
 		List* temp = first;
 		while (temp != nullptr) {
@@ -83,6 +98,7 @@ public:
 		}
 		cout << "nullptr" << endl;
 	}
+
 
 };
 
