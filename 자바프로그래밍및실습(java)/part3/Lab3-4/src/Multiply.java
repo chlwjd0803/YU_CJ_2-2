@@ -14,7 +14,7 @@ public class Multiply {
                 break;
             }
             catch(InputMismatchException e){
-                String ex = sc.nextLine();
+                String ex = sc.nextLine(); //nextLine() -> 버퍼 비우기와 비슷한 역할을 해줌
                 System.out.println(ex + "는 정수가 아닙니다. 다시 입력해주세요."); //이런식으로 잘못된 걸 바로 받아서 출력할 수 있음
 
                 /*

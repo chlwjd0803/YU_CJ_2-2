@@ -2,12 +2,6 @@ public class Game {
     private final String[] s = {"none", "가위", "바위", "보"};
     private Player[] p = new Player[2]; //플레이어 두명 만들어줌
 
-
-    public Game(){
-        p[0] = new Player("정");
-        p[1] = new Computer("컴퓨터");
-    }
-
     public Game(Player p0, Player p1){ //플레이어 두명에서 함
         p[0] = p0;
         p[1] = p1;

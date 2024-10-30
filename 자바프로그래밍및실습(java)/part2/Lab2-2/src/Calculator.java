@@ -26,11 +26,12 @@ public class Calculator {
                 result = num1 * num2;
                 break;
             case "div":
-                if(num2==0){
+                try {
+                    result = num1 / num2;
+                } catch (ArithmeticException e){ // 예외처리가 안되는 이유 : 정수형이 아니라서
                     System.out.println("0으로 나눌 수 없습니다.");
                     return;
                 }
-                else result = num1 / num2;
                 break;
             default:
                 System.out.println("사칙연산이 아닙니다.");
