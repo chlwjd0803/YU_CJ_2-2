@@ -12,14 +12,46 @@ public:
 		if (first == nullptr) {
 			first = temp;
 		}
-
+		/*
 		else {
 			for (ptr = first; ptr->link != nullptr; ptr = ptr->link); //추적하여 뒤에 붙임
 			ptr->link = temp;
 			temp->link = nullptr;
 		}
+		*/
+		else {
+			ptr = first;
+			for (; ptr->link != nullptr; ptr = ptr->link) {
+				if (((ptr->link->data) >= (temp->data)) && (ptr->data) <= (temp->data)) { 
+					//ptr과 ptr->link 사이의(같은조건도 포함) 값이면 삽입
+					temp->link = ptr->link;
+					ptr->link = temp;
+				}
+			}
+			if (ptr->link == nullptr) { //모두 비교하였는데 아닌경우 그냥 맨 뒤에다가 붙임
+				ptr->link = temp;
+				temp->link = nullptr;
+			}
+		}
 	}
 
+	void merge(List* B) {
+		List* orig = first;
+		List* temp = B;
+		for (temp = first; temp == nullptr; temp = temp->link) {insert(temp->data);}
+	}
+
+	void printList() {
+		List* temp = first;
+		while (temp != nullptr) {
+			cout << temp->data << " -> ";
+			temp = temp->link; //다음 노드로 이동
+		}
+		cout << "nullptr" << endl;
+	}
+
+
+	//이 함수를 안쓸 수는 없나?
 	void sort() { //선택정렬로 구현
 		int size;
 		List* i;
