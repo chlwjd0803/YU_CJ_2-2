@@ -1,11 +1,11 @@
-﻿#include "ListMerge.h"
+﻿#include "List.h"
 #include <iostream>
 
 using namespace std;
 
 int main() {
-	ListMerge A;
-	ListMerge B;
+	List A;
+	List B;
 
 	int item; //입력용
 
@@ -26,13 +26,8 @@ int main() {
 	B.printList();
 
 	cout << "두 리스트를 합친 후" << endl;
-
-	A.merge((List*)B);
-	
+	A.merge(&B);
 	A.printList();
-
-
-
 
 	cout << "프로그램을 종료합니다" << endl;
 }
