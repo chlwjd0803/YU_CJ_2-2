@@ -1,5 +1,2 @@
 ﻿  HW6.4.cpp
-C:\YU_CJ_repo\자료구조실습(C++)\Lab_6\HW6.4\HW6.4\List.h(80,7): warning C4101: 'size' :참조되지 않은 지역 변수입니다.
-  (소스 파일 'HW6.4.cpp'을(를) 컴파일하는 중)
-  
-  HW6.4.vcxproj -> C:\YU_CJ_repo\자료구조실습(C++)\Lab_6\HW6.4\x64\Debug\HW6.4.exe
+  HW6.4.vcxproj -> C:\YU_repo\YU_CJ_repo\자료구조실습(C++)\Lab_6\HW6.4\x64\Debug\HW6.4.exe
