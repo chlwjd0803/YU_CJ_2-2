@@ -1,4 +1,3 @@
-import java.awt.*;
 import java.util.Scanner;
 import java.util.Vector;
 
@@ -10,7 +9,7 @@ public class GraphicEditor {
         System.out.print("선(1), 사각형(2), 원(3) : ");
         int type = sc.nextInt();
         Shape shape = null;
-        switch(type){
+        switch(type){ //업캐스팅을 통한 오버라이딩
             case 1->shape = new Line();
             case 2->shape = new Rect();
             case 3->shape = new Circle();

@@ -9,7 +9,7 @@ public class LocationApp {
         for(int i=0; i<4; i++){
             String info = sc.nextLine();
             StringTokenizer st = new StringTokenizer(info, ",");
-            String city = st.nextToken().trim();
+            String city = st.nextToken().trim(); //토큰을 잘라서 빈칸을 없앰
             double latitude = Double.parseDouble(st.nextToken().trim());
             double longitude = Double.parseDouble(st.nextToken().trim());
             cities.put(city, new Location(city, latitude, longitude));
@@ -22,8 +22,8 @@ public class LocationApp {
         System.out.println("----------------------");
         while(it.hasNext()){
             String key = it.next();
-            Location loc = cities.get(key);
-            System.out.println(loc);
+            Location loc = cities.get(key); //도시이름 String에 해당하는
+            System.out.println(loc); //Location 객체의 내용 출력, 오버라이딩 통한 출력
         }
         System.out.println("----------------------");
     }

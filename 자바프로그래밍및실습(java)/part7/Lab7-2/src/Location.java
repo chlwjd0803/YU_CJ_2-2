@@ -9,32 +9,9 @@ public class Location {
         this.longitude = longitude;
     }
 
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public double getLatitude() {
-        return latitude;
-    }
-
-    public void setLatitude(double latitude) {
-        this.latitude = latitude;
-    }
-
-    public double getLongitude() {
-        return longitude;
-    }
-
-    public void setLongitude(double longitude) {
-        this.longitude = longitude;
-    }
-
     @Override
     public String toString(){
         return city + " " + latitude + " " + longitude;
     }
+    //이런걸 콜백 메소드라고 함 : 객체를 그냥 프린트했을때 이게 불려짐
 }
