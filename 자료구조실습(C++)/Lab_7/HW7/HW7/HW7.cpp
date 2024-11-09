@@ -153,6 +153,31 @@ public:
 
 List* avail; //전역변수
 
+List* getNode() {
+	List* node;
+	if (avail != nullptr) {
+		node = avail;
+		avail = avail->link;
+	}
+	else
+		node = new List();
+	return node;
+}
+
+void retNode(List* node) {
+	node->link = avail;
+	avail = node;
+}
+
+void cerease(List* first) { //이 자리에는 반드시 헤드노드 또는 first가 들어와야 됨
+	List* temp;
+	if (first != nullptr) {
+		temp = first->link;
+		avail = temp;
+		first = nullptr; //아무 노드가 없는 상태로 만들어줌
+	}
+}
+
 int main() {
 	List* A = new List();
 	List* B = new List();
@@ -180,6 +205,8 @@ int main() {
 	E = A->pMul(B);
 	cout << "다항식 곱셈 결과 : E(x)" << endl;
 	E->print();
+
+	
 
 	delete A;
 	delete B;
