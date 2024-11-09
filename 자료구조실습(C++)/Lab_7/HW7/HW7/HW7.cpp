@@ -4,6 +4,14 @@
 
 using namespace std;
 
+//선언부
+class List;
+
+List* getNode(int coef = 0, int exp = 0);
+void retNode(List* node);
+void cerease(List* first);
+
+
 class List { //클래스 이름은 그냥 List로 이용
 public:
 	int coef;
@@ -12,16 +20,14 @@ public:
 
 	List* first = nullptr; //첫 노드를 저장할 공간은 nullptr로 초기화, 객체마다 first가 다르기에 멤버변수로 선언
 
-	List() { link = nullptr; }
-
-	List(int coef, int exp) {
+	List(int coef = 0, int exp = 0) {
 		this->coef = coef;
 		this->exp = exp;
 		link = nullptr;
 	}
 
 	void insert(int coef, int exp) {
-		List* temp = new List(coef, exp);
+		List* temp = getNode(coef, exp);
 		List* ptr;
 
 		if (first == nullptr) first = temp;
@@ -55,7 +61,7 @@ public:
 
 	List* pAdd(List* X) {
 		//A는 this가 됨
-		List* D = new List();
+		List* D = getNode();
 		List* A = this;//A의 시작지점으로 지정하는게 중요함
 		List* B = X->first->link; //더미노드를 넘기고 시작
 
@@ -83,7 +89,7 @@ public:
 
 		}
 
-		List* temp = new List(-1, -1);
+		List* temp = getNode(-1, -1);
 		List* ptr = D->first;
 		for (ptr; ptr->link != nullptr; ptr = ptr->link);
 
@@ -96,7 +102,7 @@ public:
 
 	List* single_Mul(List* X) { //X는 이미 첫 주소(헤드노드를 넘어간 주소)가 지정된 상태로 받음
 
-		List* C = new List();
+		List* C = getNode();
 
 		for (; X->exp != -1; X = X->link) { 
 			int mCoef = this->coef * X->coef;
@@ -105,7 +111,7 @@ public:
 		}
 
 
-		List* temp = new List(-1, -1); //더미노드를 붙이기 위해 생성
+		List* temp = getNode(-1, -1); //new List(-1, -1); //더미노드를 붙이기 위해 생성
 		List* ptr = C->first;
 		for (ptr; ptr->link != nullptr; ptr = ptr->link); //마지막 노드까지 진행
 
@@ -137,8 +143,9 @@ public:
 			else {
 				D = D->first->link; //D의 연산이 시작되는 지점으로 항상 초기화해줌
 				D = D->pAdd(Ci); //D에 더해주기
-				delete Ci; //합 해주고 메모리 해제
+				delete Ci;
 			}
+			
 		}
 		return D;
 	}
@@ -151,20 +158,20 @@ public:
 
 };
 
-List* avail; //전역변수
+List* avail = nullptr; //전역변수, nullptr로 초기화
 
-List* getNode() {
+List* getNode(int coef, int exp) {
 	List* node;
 	if (avail != nullptr) {
 		node = avail;
 		avail = avail->link;
 	}
 	else
-		node = new List();
+		node = new List(coef, exp);
 	return node;
 }
 
-void retNode(List* node) {
+void retNode(List* node) { //사용하진 않으나 구현함
 	node->link = avail;
 	avail = node;
 }
@@ -179,8 +186,8 @@ void cerease(List* first) { //이 자리에는 반드시 헤드노드 또는 fir
 }
 
 int main() {
-	List* A = new List();
-	List* B = new List();
+	List* A = getNode();//new List(); //당연히 avail이 nullptr이므로 new List()와 같을것이다.
+	List* B = getNode();//new List();
 	List* D; //계산 후 참조반환
 	List* E; //계산 후 참조반환
 
@@ -206,12 +213,12 @@ int main() {
 	cout << "다항식 곱셈 결과 : E(x)" << endl;
 	E->print();
 
-	
+	cerease(A->first);
+	cerease(B->first);
+	cerease(D->first);
+	cerease(E->first);
 
-	delete A;
-	delete B;
-	delete D;
-	delete E;
+	delete avail;
 
 	return 0;
 }
