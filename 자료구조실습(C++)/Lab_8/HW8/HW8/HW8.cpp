@@ -1,6 +1,7 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -121,6 +122,8 @@ node* dynamicTreeGen() {
 }
 
 int main() {
+	srand(time(NULL)); //매번 다른 난수를 얻기 위함
+	
 	node* A;
 	//이진트리 구현
 	A = new node(5);
