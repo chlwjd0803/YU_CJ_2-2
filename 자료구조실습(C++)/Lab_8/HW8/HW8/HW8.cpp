@@ -91,6 +91,8 @@ node* dynamicTreeGen() {
 	node* root = new node(1); //일단 루트는 1이므로
 	node* temp;
 
+	if (n == 0) root->data = 0;
+
 	for (int i = 2; i <= n; i++) {
 		temp = root; //항상 루트에서 시작할 수 있도록
 		int rd = rand() % 2;
