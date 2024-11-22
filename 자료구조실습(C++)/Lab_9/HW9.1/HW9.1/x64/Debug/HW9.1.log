@@ -1,0 +1,3 @@
+﻿  HW9.1.cpp
+C:\영대코드파일\YU_CJ_repo\자료구조실습(C++)\Lab_9\HW9.1\HW9.1\HW9.1.cpp(94,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  HW9.1.vcxproj -> C:\영대코드파일\YU_CJ_repo\자료구조실습(C++)\Lab_9\HW9.1\x64\Debug\HW9.1.exe
