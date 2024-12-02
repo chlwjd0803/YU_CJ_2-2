@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\\uC601\uB300\uCF54\uB4DC\uD30C\uC77C\\YU_CJ_repo\\\uC790\uB8CC\uAD6C\uC870\uC2E4\uC2B5(C\u002B\u002B)\\Lab_10\\HW10\\",
+  "WorkspaceRootPath": "C:\\YU_repo\\YU_CJ_repo\\\uC790\uB8CC\uAD6C\uC870\uC2E4\uC2B5(C\u002B\u002B)\\Lab_10\\HW10\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F93B12CB-1CEA-48CA-B459-61F08B71951D}|HW10\\HW10.vcxproj|C:\\\uC601\uB300\uCF54\uB4DC\uD30C\uC77C\\YU_CJ_repo\\\uC790\uB8CC\uAD6C\uC870\uC2E4\uC2B5(C\u002B\u002B)\\Lab_10\\HW10\\HW10\\HW10.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F93B12CB-1CEA-48CA-B459-61F08B71951D}|HW10\\HW10.vcxproj|C:\\YU_repo\\YU_CJ_repo\\\uC790\uB8CC\uAD6C\uC870\uC2E4\uC2B5(C\u002B\u002B)\\Lab_10\\HW10\\HW10\\HW10.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F93B12CB-1CEA-48CA-B459-61F08B71951D}|HW10\\HW10.vcxproj|solutionrelative:HW10\\HW10.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -14,24 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "HW10.cpp",
-              "DocumentMoniker": "C:\\\uC601\uB300\uCF54\uB4DC\uD30C\uC77C\\YU_CJ_repo\\\uC790\uB8CC\uAD6C\uC870\uC2E4\uC2B5(C\u002B\u002B)\\Lab_10\\HW10\\HW10\\HW10.cpp",
+              "DocumentMoniker": "C:\\YU_repo\\YU_CJ_repo\\\uC790\uB8CC\uAD6C\uC870\uC2E4\uC2B5(C\u002B\u002B)\\Lab_10\\HW10\\HW10\\HW10.cpp",
               "RelativeDocumentMoniker": "HW10\\HW10.cpp",
-              "ToolTip": "C:\\\uC601\uB300\uCF54\uB4DC\uD30C\uC77C\\YU_CJ_repo\\\uC790\uB8CC\uAD6C\uC870\uC2E4\uC2B5(C\u002B\u002B)\\Lab_10\\HW10\\HW10\\HW10.cpp",
+              "ToolTip": "C:\\YU_repo\\YU_CJ_repo\\\uC790\uB8CC\uAD6C\uC870\uC2E4\uC2B5(C\u002B\u002B)\\Lab_10\\HW10\\HW10\\HW10.cpp",
               "RelativeToolTip": "HW10\\HW10.cpp",
-              "ViewState": "AgIAAEMAAAAA8NzJTl4IwFIAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-29T04:07:37.436Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
