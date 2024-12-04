@@ -10,14 +10,15 @@ public class LocationApp {
             String info = sc.nextLine();
             StringTokenizer st = new StringTokenizer(info, ",");
             String city = st.nextToken().trim(); //토큰을 잘라서 빈칸을 없앰
-            double latitude = Double.parseDouble(st.nextToken().trim());
+            double latitude = Double.parseDouble(st.nextToken().trim()); //String형을 double형으로 변경
             double longitude = Double.parseDouble(st.nextToken().trim());
             cities.put(city, new Location(city, latitude, longitude));
         }
     }
 
     private void printAll(){
-        var keys = cities.keySet();
+        var keys = cities.keySet(); //KeySet()는 Map 인터페이스에 존재함, 외워두기
+        //Set<String> keys = cities.keySet(); 이 원형임, 형태 알아놓기
         var it = keys.iterator();
         System.out.println("----------------------");
         while(it.hasNext()){

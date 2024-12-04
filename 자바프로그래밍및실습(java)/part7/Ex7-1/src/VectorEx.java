@@ -11,7 +11,7 @@ public class VectorEx {
         v.add(2, 100); //인덱스 2번에 원소 10을 넣겠다는 뜻
 
         System.out.println("벡터 내의 요소 객체 수 : " + v.size());
-        System.out.println("벡터의 현재 용량 : " + v.capacity());
+        System.out.println("벡터의 현재 용량 : " + v.capacity()); //기본으로 10 할당
         System.out.println("벡터의 현재 길이 : " + v.size());
 
         //모든 요소 정수 출력하기

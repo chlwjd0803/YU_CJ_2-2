@@ -8,7 +8,7 @@ class Point{
     }
 
     @Override
-    public String toString(){
+    public String toString(){ //Object의 String메소드를 오버라이딩함
         return "(" + x + ", " + y + ")";
     }
 }

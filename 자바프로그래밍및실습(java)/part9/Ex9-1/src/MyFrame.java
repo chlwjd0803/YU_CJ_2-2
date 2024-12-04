@@ -13,6 +13,7 @@ public class MyFrame extends JFrame{
         contentPane.setLayout(new BorderLayout()); //보더방식
 
         //보더방식 추가(없애면 그냥 플로우)
+        //플로우는 그냥 자동적으로 밀고 들어감. 이런식으로 뒤에 위치지정할 필요까진 없음
         contentPane.add(new JButton("OK"), BorderLayout.CENTER);
         contentPane.add(new JButton("취소"), BorderLayout.NORTH);
         contentPane.add(new JButton("무시"), BorderLayout.SOUTH);
