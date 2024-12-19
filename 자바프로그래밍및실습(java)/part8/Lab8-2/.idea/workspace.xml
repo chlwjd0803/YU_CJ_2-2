@@ -2,15 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0347a8a-850f-4a0f-b207-e403e2af6ba5" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/../../part7/Lab7-1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../part7/Lab7-1/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../part7/Lab7-1p/src/Rain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../part7/Lab7-1p/src/Rain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../part7/Lab7-2/src/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../part7/Lab7-2/src/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../part7/Lab7-2/src/LocationApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../part7/Lab7-2/src/LocationApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../part7/Lab7-2/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../part7/Lab7-2/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab8-1/src/Lab81.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab8-1/src/Lab81.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PhoneBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoneBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part10/Lab10-1/src/MyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../part10/Lab10-1/src/MyFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part10/Lab10-3/src/MyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../part10/Lab10-3/src/MyFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part10/Lab10-4/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part10/Lab10-4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part10/Lab10-4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part10/Lab10-4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part10/Lab10-4/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part10/Lab10-4/Lab10-4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part10/Lab10-4/src/MyFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part1213/Lab1213-1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part1213/Lab1213-1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part1213/Lab1213-1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part1213/Lab1213-1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part1213/Lab1213-1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part1213/Lab1213-1/Lab1213-1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../part1213/Lab1213-1/src/MyFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8-1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8-1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8-1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8-1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8-1/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8-1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8-1/Lab8-1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab8-1/src/Lab81.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/YU_repo/YU_CJ_repo/자바프로그래밍및실습(java)/part8/Lab8-3",
+    "last_opened_file_path": "C:/영대코드파일/YU_CJ_repo/자바프로그래밍및실습(java)/part8/Lab8-3",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/영대코드파일/YU_CJ_repo/자바프로그래밍및실습(java)/part8/Lab8-2/src/Main.java",
     "vue.rearranger.settings.migration": "true",
@@ -51,8 +66,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -66,6 +81,7 @@
       <updated>1733371359829</updated>
       <workItem from="1733371361019" duration="197000" />
       <workItem from="1734606513569" duration="282000" />
+      <workItem from="1734622340519" duration="91000" />
     </task>
     <servers />
   </component>

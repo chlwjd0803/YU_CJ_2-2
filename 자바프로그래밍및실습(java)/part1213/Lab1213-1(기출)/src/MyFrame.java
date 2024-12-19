@@ -3,6 +3,8 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+//기출
+
 public class MyFrame extends JFrame {
 
     class MyPanel extends JPanel implements Runnable {
@@ -11,7 +13,7 @@ public class MyFrame extends JFrame {
 
         public MyPanel() { //생성자에서 마우스리스너를 등록해주는 과정
             this.addMouseListener(new MouseAdapter() {
-                private Thread th = null;
+                private Thread th = null; //일단 스레드 없음으로 표시
 
                 @Override
                 public void mousePressed(MouseEvent e) {
@@ -45,6 +47,7 @@ public class MyFrame extends JFrame {
                 x = (int)(Math.random()*this.getWidth()); //시험출제가능 ****************************
                 y = (int)(Math.random()*this.getHeight()); //자신의 높이 안에서
                 repaint(); //변경하고 다시 그려야함, 좌표가 바뀌었기 때문에
+                //그래픽은 해당 함수가 자동 호출되지않음
             }
         }
     }

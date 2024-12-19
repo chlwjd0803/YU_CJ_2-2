@@ -3,6 +3,8 @@ import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
+//기출입니다.
+
 public class MyFrame extends JFrame {
 
     public MyFrame(){
@@ -13,6 +15,7 @@ public class MyFrame extends JFrame {
         JLabel java = new JLabel("Love Java");
         c.add(java);
         java.addKeyListener(new KeyAdapter(){
+
             @Override
             public void keyPressed(KeyEvent e) {
                 if(e.getKeyCode() == KeyEvent.VK_LEFT){ //왼쪽을 입력하면
@@ -21,6 +24,7 @@ public class MyFrame extends JFrame {
                     String first = text.substring(0,1); //하나만 잘라 가져옴
                     String remain = text.substring(1); //1번째부터 끝까지
                     jLabel.setText(remain+first);
+
                 } else if(e.getKeyCode() == KeyEvent.VK_RIGHT){
                     JLabel jLabel = (JLabel)e.getSource();
                     String text = jLabel.getText();
@@ -32,7 +36,7 @@ public class MyFrame extends JFrame {
         });
         setSize(250,200);
         setVisible(true);
-        java.setFocusable(true);
+        java.setFocusable(true); //JLabel은 포커스를 설정해야함
         java.requestFocus();
 
     }
