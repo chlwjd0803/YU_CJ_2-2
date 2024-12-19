@@ -2,7 +2,11 @@
 
 public class Main {
     public static void main(String[] args) {
-        LocationApp la = new LocationApp();
-        la.run();
+        new LocationApp().run(); //이렇게 해도 됨 .
+
+        /*
+        LocationApp lc = new LocationApp();
+        lc.run();
+        */
     }
 }

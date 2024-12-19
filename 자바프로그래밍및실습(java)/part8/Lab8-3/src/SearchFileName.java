@@ -8,7 +8,6 @@ public class SearchFileName {
     private File file;
     private ArrayList<String> a = new ArrayList<String>();
 
-
     private boolean store(){
         var sc = new Scanner(System.in);
         System.out.print("대상 파일명 입력 : ");
