@@ -1,4 +1,0 @@
-﻿  expect3.cpp
-C:\YU_repo\YU_CJ_repo\자료구조실습(C++)\expect3\expect3\expect3.cpp(123,8): warning C4101: 'Div' :참조되지 않은 지역 변수입니다.
-C:\YU_repo\YU_CJ_repo\자료구조실습(C++)\expect3\expect3\expect3.cpp(122,8): warning C4101: 'Del' :참조되지 않은 지역 변수입니다.
-  expect3.vcxproj -> C:\YU_repo\YU_CJ_repo\자료구조실습(C++)\expect3\x64\Debug\expect3.exe

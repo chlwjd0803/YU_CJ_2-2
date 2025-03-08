@@ -1,3 +1,0 @@
-﻿  HW8.cpp
-C:\YU_CJ_repo\자료구조실습(C++)\Lab_8\HW8\HW8\HW8.cpp(127,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  HW8.vcxproj -> C:\YU_CJ_repo\자료구조실습(C++)\Lab_8\HW8\x64\Debug\HW8.exe

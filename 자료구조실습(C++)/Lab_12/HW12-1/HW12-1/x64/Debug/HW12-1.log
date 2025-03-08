@@ -1,4 +1,0 @@
-﻿  HW12-1.cpp
-C:\Users\chlwj\source\repos\HW12-1\HW12-1\HW12-1.cpp(68,15): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\chlwj\source\repos\HW12-1\HW12-1\HW12-1.cpp(79,75): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  HW12-1.vcxproj -> C:\Users\chlwj\source\repos\HW12-1\x64\Debug\HW12-1.exe

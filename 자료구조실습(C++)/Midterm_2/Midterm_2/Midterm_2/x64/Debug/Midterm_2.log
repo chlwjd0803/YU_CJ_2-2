@@ -1,4 +1,0 @@
-﻿  Midterm_2.cpp
-C:\영대코드파일\YU_CJ_repo\자료구조실습(C++)\Midterm_2\Midterm_2\Midterm_2.cpp(218,10): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\영대코드파일\YU_CJ_repo\자료구조실습(C++)\Midterm_2\Midterm_2\Midterm_2.cpp(168,1): warning C4715: 'Postfix_Eval::calc': 모든 제어 경로에서 값을 반환하지는 않습니다.
-  Midterm_2.vcxproj -> C:\영대코드파일\YU_CJ_repo\자료구조실습(C++)\Midterm_2\Midterm_2\x64\Debug\Midterm_2.exe

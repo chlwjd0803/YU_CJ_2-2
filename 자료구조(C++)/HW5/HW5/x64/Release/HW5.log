@@ -1,8 +1,0 @@
-﻿  HW5.cpp
-C:\YU_CJ_repo\자료구조(C++)\HW5\HW5\HW5.cpp(170,15): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\YU_CJ_repo\자료구조(C++)\HW5\HW5\HW5.cpp(181,75): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  코드를 생성하고 있습니다.
-  Previous IPDB not found, fall back to full compilation.
-  All 25 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  코드를 생성했습니다.
-  HW5.vcxproj -> C:\YU_CJ_repo\자료구조(C++)\HW5\x64\Release\HW5.exe
